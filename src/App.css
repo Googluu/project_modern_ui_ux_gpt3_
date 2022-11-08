@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  /* para ser igual al cuadro del guion del borde */
+  padding: 0;
+  /* para que el relleno de todos los elementos sea 0 */
+  margin: 0;
+  scroll-behavior: smooth;
+  /* comportamiento de desplazamiento para ser suave para nuestro desplazamiento mas adelante */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* agregamos la etiqueta de cuerpo y vamos a configurar nuestro fondo para ser variable */
+body {
+  background: var(--color-bg);
+  /* esta es una variable css para nuestro fondo  */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*estilo para las etiquetas de ancla*/
+a {
+  color: unset;
+  text-decoration: none;
+  /*quitar esa decoracion de texto para ninguno*/
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.gradient__bg {
+  background: -moz-radial-gradient(circle at 3% 25%, rgba(14, 43, 86, 1) 0%, rgba(4, 12, 24, 1) 100%, rgba(4, 12, 24, 1) 100%);
 
-.App-link {
-  color: #61dafb;
-}
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(circle at 3% 25%, rgba(14, 43, 86, 1) 0%, rgba(4, 12, 24, 1) 100%, rgba(4, 12, 24, 1) 100%);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 3% 25%, rgba(14, 43, 86, 1) 0%, rgba(4, 12, 24, 1) 100%, rgba(4, 12, 24, 1) 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 3% 25%, rgba(14, 43, 86, 1) 0%, rgba(4, 12, 24, 1) 100%, rgba(4, 12, 24, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 25%, rgba(14, 43, 86, 1) 0%, rgba(4, 12, 24, 1) 100%, rgba(4, 12, 24, 1) 100%);
+
 }
